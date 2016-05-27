@@ -1,0 +1,67 @@
+#head_div{
+	text-align:center;
+}
+#linkHolder, #log{
+	width:80%;
+	text-align:left;
+	margin:auto;
+	display:none;
+}
+#loader{
+	width:100%;
+	text-align:center;
+	margin-top:10px;
+	display:none;
+}
+
+#log{
+	font-weight:lighter;
+	color:rgb(140,140,140);
+}
+.tool{
+	display:inline-block;
+}
+.toolbar{
+	padding:2px;
+	position:absolute;
+	display:none;
+}
+
+.editorPanel{
+	border:1px solid rgb(55,150,198);
+	height:400px;
+	overflow:scroll;
+	width:79%;
+	margin:auto;
+	margin-top:5px;
+	text-align:left;
+	padding:10px;
+}
+
+input[type="button"]:focus, div:focus{
+	outline:none;
+}
+
+input, div {
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+input[type="button"]{
+	background:white;
+	color:rgb(55,150,198);
+	padding:5px;
+	cursor:pointer;
+	min-width:50px;
+	border:1px solid rgb(55,150,198);
+	border-radius:2px;
+}
+
+input[type="button"]:hover{
+	background:rgb(55,150,198);
+	color:white;
+}
+
+a{
+	text-decoration:none;
+	line-height:30px;
+}

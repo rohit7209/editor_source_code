@@ -1,0 +1,40 @@
+<!Doctype HTML>
+<html>
+<head>
+	<title>Text Editor</title>
+	<link type="text/css" href="css/editor.css" rel="stylesheet">
+</head>
+<body>
+	
+	<div id="head_div" >
+		<div id="toolbar" class="toolbar">
+			<input type="button" id="tool1" class="tool" onclick="Bold()" value="B">
+			<input type="button" id="tool2" class="tool" onclick="Underline()" value="U">
+			<input type="button" id="tool3" class="tool" onclick="toRed()" value="R">
+		</div>
+		
+		<p>
+			<div style="text-align:right;width:80%;margin:auto">
+				<h1 style="text-align:left;color:rgb(55,150,198);font-weight:lighter">Text Editor</h1>
+				<input type="button" onclick="Bold();" value="B">
+				<input type="button" onclick="Underline();" value="U">
+				<input type="button" onclick="Italic();" value="I">
+				<input type="button" onclick="toRed();" value="R">
+			</div>
+			<div id="editorPanel" contenteditable="true" class="editorPanel">
+			
+			</div>
+		</p>
+		
+		<div id="linkHolder">
+		</div>
+		
+		<br><input type="button" onclick="done();" value="Done">
+		<input type="button" onclick="replace();" value="Replace 4-letter words with random words">
+		<div id="loader"><img src="images/loader.gif"></div>
+		<div id="log"></div>
+	</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/editor.js"></script>
+</html>
